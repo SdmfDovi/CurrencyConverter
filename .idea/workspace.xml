@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c428c03-1aae-4b48-9fa8-9119a1d69ea9" name="Changes" comment="Initial">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CoinFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Coins.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ILS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/USD.java" afterDir="false" />
+    <list default="true" id="1c428c03-1aae-4b48-9fa8-9119a1d69ea9" name="Changes" comment="Basic running Currency Converter">
+      <change afterPath="$PROJECT_DIR$/src/main/java/EUR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ICalculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ICalculate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CoinFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CoinFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Coins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coins.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +40,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager">
@@ -82,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663784260363</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Basic running Currency Converter">
+      <created>1663866280882</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663866280882</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +104,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
+    <MESSAGE value="Basic running Currency Converter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic running Currency Converter" />
   </component>
 </project>

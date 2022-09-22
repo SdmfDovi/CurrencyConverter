@@ -1,3 +1,5 @@
+import java.awt.Desktop;
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -31,18 +33,9 @@ public class CoinFactory {
         String welcome = "Welcome to currency converter";
         String choose = "Please choose and option (1\\2)";
         String dToS = "1. Dollars to shekels";
-        String stoD = "2. Shekels to Dollars";
-//        if (initialVisitCounter == 0) {
-//            initialVisitCounter++;
-//            System.out.println(welcome);
-//            System.out.println(choose);
-//            System.out.println(dToS);
-//            System.out.println(stoD);
-//        } else {
-//            System.out.println(choose);
-//            System.out.println(dToS);
-//            System.out.println(stoD);
-//        }
+        String sToD = "2. Shekels to Dollars";
+        String sToE = "3. Shekels to Euro";
+
 
         int i = 0;
         while (i < 1) {
@@ -51,11 +44,14 @@ public class CoinFactory {
                 System.out.println(welcome);
                 System.out.println(choose);
                 System.out.println(dToS);
-                System.out.println(stoD);
+                System.out.println(sToD);
+                System.out.println(sToE);
             } else {
                 System.out.println(choose);
                 System.out.println(dToS);
-                System.out.println(stoD);
+                System.out.println(sToD);
+                System.out.println(sToE);
+
             }
             Scanner choice = new Scanner(System.in);
             coinChoice = choice.nextInt();
@@ -69,7 +65,14 @@ public class CoinFactory {
                 coinType = "USD";
                 initialSymbol = "₪";
                 convertedSymbol = "$";
-            } else {
+            }
+            else if (coinChoice == 3) {
+                i++;
+                coinType = "EUR";
+                initialSymbol = "₪";
+                convertedSymbol = "€";
+            }
+            else {
                 System.out.println("Invalid choice please try again");
 
             }
@@ -110,11 +113,17 @@ public class CoinFactory {
         System.out.println("Thanks for using our currency converter!");
         System.out.println(transactionRecord.toString());
         saveTransaction(transactionRecord);
+
     }
 
     public static void saveTransaction(ArrayList a) throws IOException {
         String filePath = System.getProperty("user.home") + "/Desktop/TransactionResults.txt";
         Files.writeString(Paths.get(filePath),transactionRecord.toString() );
+        Desktop desktop = Desktop.getDesktop();
+        File record = new File(filePath);
+        if(record.exists()) desktop.open(record);
+
+
 
     }
     public static Coin getCoinType(Coins coin){
@@ -124,7 +133,10 @@ public class CoinFactory {
                 return new ILS();
 
             case USD:
-            return new USD ();
+                 return new USD ();
+
+            case EUR:
+                return new EUR();
         }
 
         return null;
