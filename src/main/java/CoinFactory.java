@@ -8,13 +8,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class CoinFactory {
-    private static ArrayList <String> transactionRecord = new ArrayList<String>();
+    private static ArrayList <Result> transactionRecord = new ArrayList<Result>();
     private static final DecimalFormat df = new DecimalFormat("0.00");
     private static int coinChoice;
     public static double amountToConvert;
     private static String coinType;
     private static String convertedSymbol;
     private static String initialSymbol;
+    private static Result result=new Result();
 
 
     private static int initialVisitCounter=0;
@@ -60,17 +61,22 @@ public class CoinFactory {
                 coinType = "ILS";
                 initialSymbol = "$";
                 convertedSymbol = "₪";
+                result.setConversionFlow(dToS.substring(3));
             } else if (coinChoice == 2) {
                 i++;
                 coinType = "USD";
                 initialSymbol = "₪";
                 convertedSymbol = "$";
+                result.setConversionFlow(sToD.substring(3));
+
             }
             else if (coinChoice == 3) {
                 i++;
                 coinType = "EUR";
                 initialSymbol = "₪";
                 convertedSymbol = "€";
+                result.setConversionFlow(sToE.substring(3));
+
             }
             else {
                 System.out.println("Invalid choice please try again");
@@ -82,16 +88,16 @@ public class CoinFactory {
 
         System.out.println("Please enter amount to convert");
         Scanner amount = new Scanner(System.in);
-        amountToConvert =amount.nextDouble();
+        result.setAmountConverted(amount.nextDouble());
         conversion = getCoinType(Coins.valueOf(coinType));
     }
     public static void  thirdScreen() throws IOException {
-        String transaction = ("Converting " + initialSymbol+ amountToConvert + " to " + coinType +convertedSymbol+ ":");
+        String transaction = ("Converting " +  result.getAmountConverted() +" "+result.getConversionFlow()+ ":");
         System.out.println(transaction);
-        String total = "Total converted amount is " +convertedSymbol+ df.format(conversion.calculate(amountToConvert));
+        String total = "Total converted amount is " +convertedSymbol+ df.format(conversion.calculate(result.getAmountConverted()));
         System.out.println(total);
 
-        transactionRecord.add(transaction + total);
+        transactionRecord.add(result);
         int i = 0;
         while (i < 1) {
             System.out.println("Would you like to make another transaction? y/n");

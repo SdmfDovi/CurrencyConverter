@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c428c03-1aae-4b48-9fa8-9119a1d69ea9" name="Changes" comment="Added open file on exit" />
+    <list default="true" id="1c428c03-1aae-4b48-9fa8-9119a1d69ea9" name="Changes" comment="CurrencyConverter with Eur and open file on exit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CoinFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CoinFactory.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +30,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2F5ZLgoRTUZnRvb4Vd3JPluDLd0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -89,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663873592326</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="CurrencyConverter with Eur and open file on exit">
+      <created>1663873953010</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663873953010</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,6 +120,7 @@
     <MESSAGE value="Initial" />
     <MESSAGE value="Basic running Currency Converter" />
     <MESSAGE value="Added open file on exit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added open file on exit" />
+    <MESSAGE value="CurrencyConverter with Eur and open file on exit" />
+    <option name="LAST_COMMIT_MESSAGE" value="CurrencyConverter with Eur and open file on exit" />
   </component>
 </project>
