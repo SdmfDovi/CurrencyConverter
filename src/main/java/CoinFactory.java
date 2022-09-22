@@ -1,3 +1,5 @@
+import Coins.*;
+
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
@@ -6,6 +8,7 @@ import java.nio.file.Paths;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Scanner;
+
 
 public class CoinFactory {
     private static ArrayList <Result> transactionRecord = new ArrayList<Result>();
@@ -16,21 +19,21 @@ public class CoinFactory {
     private static String convertedSymbol;
     private static String initialSymbol;
     private static Result result=new Result();
-
-
     private static int initialVisitCounter=0;
-    private static Coin conversion;
+     static Coin conversion;
     public static void main(String[] args) throws IOException {
     converter();
 
     }
     private static void converter() throws IOException{
+        //runs through the 3 screen options
         firstScreen();
         secondScreen();
         thirdScreen();
 
     }
     private static void firstScreen() {
+        //displays the options for conversion
         String welcome = "Welcome to currency converter";
         String choose = "Please choose and option (1\\2)";
         String dToS = "1. Dollars to shekels";
@@ -58,13 +61,13 @@ public class CoinFactory {
             coinChoice = choice.nextInt();
             if (coinChoice == 1) {
                 i++;
-                coinType = "ILS";
+                coinType = "Coins.ILS";
                 initialSymbol = "$";
                 convertedSymbol = "₪";
                 result.setConversionFlow(dToS.substring(3));
             } else if (coinChoice == 2) {
                 i++;
-                coinType = "USD";
+                coinType = "Coins.USD";
                 initialSymbol = "₪";
                 convertedSymbol = "$";
                 result.setConversionFlow(sToD.substring(3));
@@ -72,7 +75,7 @@ public class CoinFactory {
             }
             else if (coinChoice == 3) {
                 i++;
-                coinType = "EUR";
+                coinType = "Coins.EUR";
                 initialSymbol = "₪";
                 convertedSymbol = "€";
                 result.setConversionFlow(sToE.substring(3));
@@ -85,6 +88,7 @@ public class CoinFactory {
         }
     }
     private static void secondScreen() throws  IOException{
+        //runs through second screen getting conversion amount
 
         System.out.println("Please enter amount to convert");
         Scanner amount = new Scanner(System.in);
@@ -92,6 +96,7 @@ public class CoinFactory {
         conversion = getCoinType(Coins.valueOf(coinType));
     }
     public static void  thirdScreen() throws IOException {
+        //dislpays 3rd screed with conversion amounts and result adds both to results ArrayList
         String transaction = ("Converting " +  result.getAmountConverted() +" "+result.getConversionFlow()+ ":");
         System.out.println(transaction);
         String total = "Total converted amount is " +convertedSymbol+ df.format(conversion.calculate(result.getAmountConverted()));
@@ -116,6 +121,7 @@ public class CoinFactory {
         }
     }
     public static void endScreen() throws IOException {
+        //displays end Screen with message and transactions that occurred.
         System.out.println("Thanks for using our currency converter!");
         System.out.println(transactionRecord.toString());
         saveTransaction(transactionRecord);
@@ -123,6 +129,7 @@ public class CoinFactory {
     }
 
     public static void saveTransaction(ArrayList a) throws IOException {
+        //Saves and displays transactions
         String filePath = System.getProperty("user.home") + "/Desktop/TransactionResults.txt";
         Files.writeString(Paths.get(filePath),transactionRecord.toString() );
         Desktop desktop = Desktop.getDesktop();
@@ -139,7 +146,7 @@ public class CoinFactory {
                 return new ILS();
 
             case USD:
-                 return new USD ();
+                 return new USD();
 
             case EUR:
                 return new EUR();

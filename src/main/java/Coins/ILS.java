@@ -1,3 +1,5 @@
+package Coins;
+
 public class ILS extends Coin {
     final double value =3.52;
    public double getValue(){

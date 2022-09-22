@@ -1,3 +1,5 @@
+package Coins;
+
 public class USD extends Coin{
     final double value =0.28;
     public double getValue(){
