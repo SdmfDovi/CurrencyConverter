@@ -1,2 +1,5 @@
-public interface ICalculate {
+ interface ICalculate {
+    default double calculate(double amountToConvert) {
+        return amountToConvert;
+    }
 }
