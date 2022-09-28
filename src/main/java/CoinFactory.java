@@ -7,6 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
@@ -35,58 +36,60 @@ public class CoinFactory {
     private static void firstScreen() {
         //displays the options for conversion
         String welcome = "Welcome to currency converter";
-        String choose = "Please choose and option (1\\2)";
+        String choose = "Please choose an option (1\\2\\3)";
         String dToS = "1. Dollars to shekels";
         String sToD = "2. Shekels to Dollars";
         String sToE = "3. Shekels to Euro";
 
 
-        int i = 0;
-        while (i < 1) {
-            if (initialVisitCounter == 0) {
+
+        while (initialVisitCounter == 0) {
                 initialVisitCounter++;
                 System.out.println(welcome);
-                System.out.println(choose);
-                System.out.println(dToS);
-                System.out.println(sToD);
-                System.out.println(sToE);
-            } else {
-                System.out.println(choose);
-                System.out.println(dToS);
-                System.out.println(sToD);
-                System.out.println(sToE);
+        }
+        int i=0;
+        while (i<1) {
+            System.out.println(choose);
+            System.out.println(dToS);
+            System.out.println(sToD);
+            System.out.println(sToE);
 
+
+            try {
+                Scanner choice = new Scanner(System.in);
+                coinChoice = choice.nextInt();
+
+                if (coinChoice == 1) {
+                    i++;
+                    coinType = "ILS";
+                    initialSymbol = "$";
+                    convertedSymbol = "₪";
+                    result.setConversionFlow(dToS.substring(3));
+                } else if (coinChoice == 2) {
+                    i++;
+                    coinType = "USD";
+                    initialSymbol = "₪";
+                    convertedSymbol = "$";
+                    result.setConversionFlow(sToD.substring(3));
+
+                } else if (coinChoice == 3) {
+                    i++;
+                    coinType = "EUR";
+                    initialSymbol = "₪";
+                    convertedSymbol = "€";
+                    result.setConversionFlow(sToE.substring(3));
+
+                } else {
+                    System.out.println("Invalid choice please try again");
+
+                }
             }
-            Scanner choice = new Scanner(System.in);
-            coinChoice = choice.nextInt();
-            if (coinChoice == 1) {
-                i++;
-                coinType = "Coins.ILS";
-                initialSymbol = "$";
-                convertedSymbol = "₪";
-                result.setConversionFlow(dToS.substring(3));
-            } else if (coinChoice == 2) {
-                i++;
-                coinType = "Coins.USD";
-                initialSymbol = "₪";
-                convertedSymbol = "$";
-                result.setConversionFlow(sToD.substring(3));
-
-            }
-            else if (coinChoice == 3) {
-                i++;
-                coinType = "Coins.EUR";
-                initialSymbol = "₪";
-                convertedSymbol = "€";
-                result.setConversionFlow(sToE.substring(3));
-
-            }
-            else {
-                System.out.println("Invalid choice please try again");
-
+            catch(InputMismatchException e){
+                System.out.println("Invalid input please try again");
             }
         }
     }
+
     private static void secondScreen() throws  IOException{
         //runs through second screen getting conversion amount
 
@@ -96,10 +99,12 @@ public class CoinFactory {
         conversion = getCoinType(Coins.valueOf(coinType));
     }
     public static void  thirdScreen() throws IOException {
-        //dislpays 3rd screed with conversion amounts and result adds both to results ArrayList
+        //displays 3rd screed with conversion amounts and result adds both to results ArrayList
         String transaction = ("Converting " +  result.getAmountConverted() +" "+result.getConversionFlow()+ ":");
         System.out.println(transaction);
-        String total = "Total converted amount is " +convertedSymbol+ df.format(conversion.calculate(result.getAmountConverted()));
+       result.setTotalAfterConversion(Double.parseDouble(df.format(conversion.calculate(result.getAmountConverted()))));
+       double totalAfterConversion = result.getTotalAfterConversion();
+        String total = "Total converted amount is " +convertedSymbol+ totalAfterConversion;
         System.out.println(total);
 
         transactionRecord.add(result);

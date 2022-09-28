@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c428c03-1aae-4b48-9fa8-9119a1d69ea9" name="Changes" comment="Added Result object">
+    <list default="true" id="1c428c03-1aae-4b48-9fa8-9119a1d69ea9" name="Changes" comment="Placed Coins in Coins Package">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coins/Coin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CoinFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CoinFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coins/Coins.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EUR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coins/EUR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ICalculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coins/ICalculate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ILS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coins/ILS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/USD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coins/USD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Coins/ILS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coins/ILS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Coins/USD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coins/USD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Result.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +42,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_directory_selection": "C:/Users/doviy/Box/Automation/CoinConverter/src/main/java/Coins",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
@@ -120,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663877044842</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Placed Coins in Coins Package">
+      <created>1663878684902</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663878684902</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +147,7 @@
     <MESSAGE value="Added open file on exit" />
     <MESSAGE value="CurrencyConverter with Eur and open file on exit" />
     <MESSAGE value="Added Result object" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Result object" />
+    <MESSAGE value="Placed Coins in Coins Package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Placed Coins in Coins Package" />
   </component>
 </project>

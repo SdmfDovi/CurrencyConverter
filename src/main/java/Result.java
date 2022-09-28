@@ -1,6 +1,17 @@
 public class Result {
     private String conversionFlow;
     private double amountConverted;
+    private double totalAfterConversion;
+
+    public double getTotalAfterConversion() {
+        return totalAfterConversion;
+    }
+
+    public void setTotalAfterConversion(double totalAfterConversion) {
+        this.totalAfterConversion = totalAfterConversion;
+    }
+
+
     public double getAmountConverted() {
         return amountConverted;
     }
@@ -20,6 +31,7 @@ public class Result {
 
     @Override
     public String toString() {
-        return getClass().getSimpleName() + " Amount converted: "+amountConverted+" Conversion Flow: "+conversionFlow;
+        return getClass().getSimpleName() + " Amount converted: "+amountConverted+" Conversion Flow: "+conversionFlow+
+                " Total after conversion: " +totalAfterConversion;
     }
 }

@@ -1,14 +1,14 @@
 package Coins;
 
 public class ILS extends Coin {
-    final double value =3.52;
+    final double value =0.28;
    public double getValue(){
        return value;
    }
 
     @Override
     public double calculate(double input){
-        return input * getValue();
+        return input / getValue();
     }
 
 }
