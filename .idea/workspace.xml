@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="All Places" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c428c03-1aae-4b48-9fa8-9119a1d69ea9" name="Changes" comment="Placed Coins in Coins Package">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="1c428c03-1aae-4b48-9fa8-9119a1d69ea9" name="Changes" comment="-Modified while loop for firstScreen&#10;-added totalAfterConversion to results and thirdScreen">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CoinFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CoinFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Coins/EUR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coins/EUR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Coins/ILS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coins/ILS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Coins/USD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coins/USD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Result.java" afterDir="false" />
@@ -40,16 +45,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_directory_selection": "C:/Users/doviy/Box/Automation/CoinConverter/src/main/java/Coins",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/doviy/Box/Automation/CoinConverter/src/main/java/Coins&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Coins" />
@@ -127,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663878684902</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="-Modified while loop for firstScreen&#10;-added totalAfterConversion to results and thirdScreen">
+      <created>1664356969259</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664356969259</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +161,7 @@
     <MESSAGE value="CurrencyConverter with Eur and open file on exit" />
     <MESSAGE value="Added Result object" />
     <MESSAGE value="Placed Coins in Coins Package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Placed Coins in Coins Package" />
+    <MESSAGE value="-Modified while loop for firstScreen&#10;-added totalAfterConversion to results and thirdScreen" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Modified while loop for firstScreen&#10;-added totalAfterConversion to results and thirdScreen" />
   </component>
 </project>
