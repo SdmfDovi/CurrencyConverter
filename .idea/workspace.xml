@@ -8,14 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c428c03-1aae-4b48-9fa8-9119a1d69ea9" name="Changes" comment="-Modified while loop for firstScreen&#10;-added totalAfterConversion to results and thirdScreen">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1c428c03-1aae-4b48-9fa8-9119a1d69ea9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CoinFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CoinFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coins/EUR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coins/EUR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coins/ILS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coins/ILS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coins/USD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coins/USD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Result.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +134,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664356969259</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added Apo connectivity for coin values.">
+      <created>1664650061285</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664650061285</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added API connectivity for coin values.">
+      <created>1664650152265</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664650152265</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +170,8 @@
     <MESSAGE value="Added Result object" />
     <MESSAGE value="Placed Coins in Coins Package" />
     <MESSAGE value="-Modified while loop for firstScreen&#10;-added totalAfterConversion to results and thirdScreen" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Modified while loop for firstScreen&#10;-added totalAfterConversion to results and thirdScreen" />
+    <MESSAGE value="Added Apo connectivity for coin values." />
+    <MESSAGE value="Added API connectivity for coin values." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added API connectivity for coin values." />
   </component>
 </project>

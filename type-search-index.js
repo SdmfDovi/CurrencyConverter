@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"Coins","l":"Coin"},{"p":"<Unnamed>","l":"CoinFactory"},{"p":"Coins","l":"Coins"},{"p":"Coins","l":"EUR"},{"p":"Coins","l":"ILS"},{"p":"<Unnamed>","l":"Result"},{"p":"Coins","l":"USD"}];updateSearchResults();
