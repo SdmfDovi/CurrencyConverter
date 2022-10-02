@@ -8,8 +8,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c428c03-1aae-4b48-9fa8-9119a1d69ea9" name="Changes" comment="Added API connectivity for coin values.&#10;Added Javadoc">
+    <list default="true" id="1c428c03-1aae-4b48-9fa8-9119a1d69ea9" name="Changes" comment="Cleaned up code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoinFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/element-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery-ui.overrides.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoinFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Result.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/element-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jquery-ui.overrides.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/package-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tag-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/type-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tag-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/type-search-index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664655346637</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Cleaned up code">
+      <created>1664713417709</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664713417709</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +228,7 @@
     <MESSAGE value="Added Apo connectivity for coin values." />
     <MESSAGE value="Added API connectivity for coin values." />
     <MESSAGE value="Added API connectivity for coin values.&#10;Added Javadoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added API connectivity for coin values.&#10;Added Javadoc" />
+    <MESSAGE value="Cleaned up code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up code" />
   </component>
 </project>
