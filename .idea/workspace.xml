@@ -8,7 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c428c03-1aae-4b48-9fa8-9119a1d69ea9" name="Changes" comment="">
+    <list default="true" id="1c428c03-1aae-4b48-9fa8-9119a1d69ea9" name="Changes" comment="Added API connectivity for coin values.&#10;Added Javadoc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664650152265</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added API connectivity for coin values.&#10;Added Javadoc">
+      <created>1664655346637</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664655346637</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +179,7 @@
     <MESSAGE value="-Modified while loop for firstScreen&#10;-added totalAfterConversion to results and thirdScreen" />
     <MESSAGE value="Added Apo connectivity for coin values." />
     <MESSAGE value="Added API connectivity for coin values." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added API connectivity for coin values." />
+    <MESSAGE value="Added API connectivity for coin values.&#10;Added Javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added API connectivity for coin values.&#10;Added Javadoc" />
   </component>
 </project>

@@ -125,7 +125,6 @@ public class CoinFactory {
      */
     private static void secondScreen() throws  IOException{
 
-
         System.out.println("Please enter amount to convert");
         Scanner amount = new Scanner(System.in);
         result.setAmountConverted(amount.nextDouble());
@@ -192,8 +191,6 @@ public class CoinFactory {
         Desktop desktop = Desktop.getDesktop();
         File record = new File(filePath);
         if(record.exists()) desktop.open(record);
-
-
 
     }
 

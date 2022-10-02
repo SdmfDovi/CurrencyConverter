@@ -22,9 +22,7 @@ public class ILS extends Coin {
     }
 
     @Override
-    public double calculate(double input) {
-        return input * getValue();
-    }
+    public double calculate(double input) {return input * getValue();}
 
     public double apiValue() throws IOException {
         String url_str = "https://api.exchangerate.host/convert?from=USD&to=ils";
